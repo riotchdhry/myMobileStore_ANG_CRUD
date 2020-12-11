@@ -1,0 +1,47 @@
+doctype html
+head
+  title= title
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+nav.navbar.navbar-inverse
+  .container-fluid
+    .navbar-header
+      a.navbar-brand(href='/') 
+      img.d-inline-block.align-top(src='/brandlogo4.png' width='250' height='50' alt='' loading='lazy')
+    ul.nav.navbar-nav
+      li.active
+        a(href='/') Home
+      li
+        a(href='/about') About Us
+      li
+        a(href='/list') Products
+      li
+        a(href='/display') display  
+    form.navbar-form.navbar-left(action='/action_page.php')
+      .form-group
+        input.form-control(type='text' placeholder='Search' name='search')
+      button.btn.btn-default(type='submit') Submit
+.container
+  block content
+
+
+.jumbotron.text-center(style='margin-bottom:0')
+  p Footer Content.
+  nav.navbar.fixed-bottom.navbar-light.bg-light
+  .navbar.navbar-inverse
+    a.navbar-brand(href='#') Instagram
+    a.navbar-brand(href='#') Facebook
+    a.navbar-brand(href='#') Twitter
+    a.navbar-brand(href='#') Reddit
+  footer.page-footer.font-small.blue
+  .footer-copyright.text-center.py-3
+    | &copy; 2020 Copyright:
+    a(href='/')  MobiKing.ca
+  .container-
+
+
+  
+

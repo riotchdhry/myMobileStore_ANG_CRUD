@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+
+    p Name:  #{currentMobile.name}
+    p Type:  #{currentMobile.type}
+    p Brand: #{currentMobile.brand}
+    p Reviews: #{currentMobile.reviews}
+    p Specifications
+    p RAM: #{currentMobile.specifications.ram}
+    p Storage: #{currentMobile.specifications.storage}
+    p Display: #{currentMobile.specifications.display}
+    p Camera: #{currentMobile.specifications.camera}

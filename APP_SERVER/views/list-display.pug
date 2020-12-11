@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  
+  h1 Some of our offerings
+  ul
+    each mobile in mobiles
+      li 
+        a(href=`/mobiles/${mobile._id}`) #{mobile.name}
+  
+  p
+    a(href=`/new`)
